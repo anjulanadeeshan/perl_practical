@@ -9,7 +9,8 @@ my $note = "Weather is nice today.";
 print ("$note\n");
 
 print "enter a word for an animal :";
-my $animal = <STDIN>."\n";
+my $animal = <STDIN>;
+chomp($animal);
 
 print "print lowercase :".lc($animal)."\n";
 print "print uppercase :".uc($animal)."\n";
